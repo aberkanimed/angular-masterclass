@@ -1,0 +1,8 @@
+<app-task-form (onAddTask)="addTask($event)"></app-task-form>
+<section class="flex flex-col space-y-4 mt-6">
+    <app-task-item
+        *ngFor="let task of tasks" [task]="task"
+        (onDeleteTask)="deleteTask(task)"
+        (onToggleTask)="toggleTask(task)">
+    </app-task-item>
+</section>

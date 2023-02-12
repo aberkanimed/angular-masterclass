@@ -1,0 +1,5 @@
+<form (ngSubmit)="onSubmit()" class="flex flex-col space-y-3">
+    <input [(ngModel)]="title" name="title" class="py-2 px-4 rounded-md bg-slate-700 shadow-md text-white text-lg w-full" type="text" placeholder="Enter task title">
+    <input [(ngModel)]="description" name="description" class="py-2 px-4 rounded-md bg-slate-700 shadow-md text-white text-lg w-full" type="text" placeholder="Enter task description">
+    <input type="submit" value="Save Task" class="bg-blue-500 text-white font-bold py-3 rounded-md">
+</form>
